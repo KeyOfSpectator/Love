@@ -19,7 +19,7 @@ function func_delete_content(parent_ele) {
 }
 
 
-function func_create_new_code(parent_ele) {
+function func_create_new_code(parent_ele , div_list) {
 	var new_code = document.createElement("div"); 
 	
 	new_code.id = "new_code";  
@@ -32,7 +32,7 @@ function func_create_new_code(parent_ele) {
    	parent_ele.insertBefore(new_code);  
 
    	//create new div and space_div
-   	var div_list = new Array()
+ 
 
    	create_space(new_code)
    	var str = "/**";
@@ -122,14 +122,16 @@ function create_div(parent_ele , type , str , div_id){
       return div_text;
 }
 
-function code_fly(ele_id ,left , top){
+function code_fly(ele_id ,left , top , speed){
 
     var div=$("#"+ele_id);  
     div.animate(
       {
          left:left,
          top: top
-      },"slow");
+      },speed);
     //ele.animate({fontSize:'3em'},"slow");
 
 }
+
+

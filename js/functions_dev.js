@@ -2,12 +2,20 @@
 var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
+var offsetX;
+var offsetY;
+var codeOffsetX;
+var codeOffsetY;
 
 $(function () {
     // setup garden
 	$loveHeart = $("#loveHeart");
-	var offsetX = $loveHeart.width() / 2;
-	var offsetY = $loveHeart.height() / 2 - 55;
+	offsetX = $loveHeart.width() / 2;
+	offsetY = $loveHeart.height() / 2 - 55;
+
+	codeOffsetX = $loveHeart.width() / 2 + 400;
+	codeOffsetY = $loveHeart.height() / 2 - 55 - 112.5;
+
     $garden = $("#garden");
     gardenCanvas = $garden[0];
 	gardenCanvas.width = $("#loveHeart").width();
@@ -17,7 +25,8 @@ $(function () {
     garden = new Garden(gardenCtx, gardenCanvas);
 	
     //create new_code
-    func_create_new_code(content);
+    var div_list = new Array();
+    func_create_new_code(content , div_list);
 	adjustCodePosition();
 	$("#new_code").typewriter();
 
@@ -32,9 +41,14 @@ $(function () {
     }, Garden.options.growSpeed);
 
     setTimeout(function () {
-				//func_delete_content(content);
-			code_fly("0" , "100px" ,  "100px");	
+			//func_delete_content(content);
+			fly(div_list);
 			}, 5000);
+
+    setTimeout(function () {
+				//move to functions_dev
+				startHeartAnimation();
+			}, 1000);
 });
 
 $(window).resize(function() {
@@ -50,6 +64,13 @@ function getHeartPoint(angle) {
 	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
 	var y = - 20 * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
 	return new Array(offsetX + x, offsetY + y);
+}
+
+function getCodeHeartPoint(angle) {
+	var t = angle / Math.PI;
+	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
+	var y = - 20 * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
+	return new Array(codeOffsetX + x, codeOffsetY + y);
 }
 
 function startHeartAnimation() {
@@ -78,6 +99,34 @@ function startHeartAnimation() {
 			angle += 0.2;
 		}
 	}, interval);
+}
+
+function fly(div_list){
+
+   var length = div_list.length;
+   var cluster = 20/length;
+   var div_code_id = 0;
+
+   var code_interval = 500;
+   var code_angle = 10;
+   //var code_heart = new Array();
+   //var code_maxRadius = 5; //*
+
+   var Code_animationTimer = setInterval(function () {
+      
+      var position = getCodeHeartPoint(code_angle);
+      
+      code_fly(div_code_id , position[0] , position[1]);
+     
+      if (code_angle >= 30) {
+         clearInterval(Code_animationTimer);
+         //showMessages();
+      } else {
+         code_angle += cluster;
+         div_code_id++;
+      }
+   }, code_interval);
+
 }
 
 (function($) {
