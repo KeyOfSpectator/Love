@@ -35,15 +35,31 @@ function func_create_new_code(parent_ele , div_list) {
  
 
    	create_space(new_code)
-   	var str = "/**";
+   	var str = "this is a very long sentence";
    	var type = "comments";
    	create_line(new_code, str, div_list, type);
 
+/*
    	var str = "this is a test";
    	var type = "comments";
    	create_space(new_code)
    	create_line(new_code, str, div_list, type);
 
+      var str = "line 3 test";
+      var type = "comments";
+      create_space(new_code)
+      create_line(new_code, str, div_list, type);
+
+      var str = "line 4 test";
+      var type = "comments";
+      create_space(new_code)
+      create_line(new_code, str, div_list, type);
+
+      var str = "line 5 test";
+      var type = "comments";
+      create_space(new_code)
+      create_line(new_code, str, div_list, type);
+*/
 }
 
 function create_line(parent_ele, str_line, div_list, type){
@@ -124,11 +140,20 @@ function create_div(parent_ele , type , str , div_id){
 
 function code_fly(ele_id ,left , top , speed){
 
-    var div=$("#"+ele_id);  
+   var div=$("#"+ele_id);  
+
+   var relativeOffsetLeft=$("#"+ele_id).offset().left;
+   var relativeOffsetTop=$("#"+ele_id).offset().top;
+
+   var relativeOffset_Left_Content=$("#content").offset().left;
+   var relativeOffset_Top_Content=$("#content").offset().top;
+
     div.animate(
       {
-         left:left,
-         top: top
+         left:left - relativeOffsetLeft + relativeOffset_Left_Content,
+         top: top - relativeOffsetTop + relativeOffset_Top_Content
+         //left:left,
+         //top: top 
       },speed);
     //ele.animate({fontSize:'3em'},"slow");
 

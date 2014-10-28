@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    x=$("#span2").offset();
+    $("#span1").text(x.left);
+    $("#span2").text(x.top);
+  });
+});
+</script>
+</head>
+<body>
+<p>本段落的偏移是 <span id="span1" style="position:relative">unknown</span> left 和  top。<span id="span2">unknown</span></p>
+
+<button>获得 offset</button>
+</body>
+</html>

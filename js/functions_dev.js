@@ -13,8 +13,8 @@ $(function () {
 	offsetX = $loveHeart.width() / 2;
 	offsetY = $loveHeart.height() / 2 - 55;
 
-	codeOffsetX = $loveHeart.width() / 2 + 400;
-	codeOffsetY = $loveHeart.height() / 2 - 55 - 120;
+	codeOffsetX = $loveHeart.width() / 2 + 440;
+	codeOffsetY = $loveHeart.height() / 2 - 55 ;
 
     $garden = $("#garden");
     gardenCanvas = $garden[0];
@@ -43,7 +43,7 @@ $(function () {
     setTimeout(function () {
 			//func_delete_content(content);
 			fly(div_list);
-			}, 5000);
+			}, 7000);
 
     setTimeout(function () {
 				//move to functions_dev
@@ -126,7 +126,9 @@ function fly(div_list){
          //showMessages();
       } else {
          code_angle += cluster;
-         div_code_id++;
+         if(div_code_id<length-1){
+         	div_code_id++;	
+         }         
       }
    }, code_interval);
 
