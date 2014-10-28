@@ -16,8 +16,13 @@ $(function () {
     gardenCtx.globalCompositeOperation = "lighter";
     garden = new Garden(gardenCtx, gardenCanvas);
 	
-	$("#content").css("width", $loveHeart.width() + $("#code").width());
-	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
+    //create new_code
+    func_create_new_code(content);
+	adjustCodePosition();
+	$("#new_code").typewriter();
+
+	$("#content").css("width", $loveHeart.width() + $("#new_code").width());
+	$("#content").css("height", Math.max($loveHeart.height(), $("#new_code").height()));
 	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
 	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
 
@@ -25,6 +30,11 @@ $(function () {
     setInterval(function () {
         garden.render();
     }, Garden.options.growSpeed);
+
+    setTimeout(function () {
+				//func_delete_content(content);
+			code_fly("0" , "100px" ,  "100px");	
+			}, 5000);
 });
 
 $(window).resize(function() {
@@ -133,10 +143,6 @@ function adjustWordsPosition() {
 }
 
 function adjustCodePosition() {
-	$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);
-}
-
-function adjustCodePosition_new() {
 	$('#new_code').css("margin-top", ($("#garden").height() - $("#new_code").height()) / 2);
 }
 

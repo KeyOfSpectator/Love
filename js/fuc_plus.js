@@ -100,6 +100,9 @@ function create_div(parent_ele , type , str , div_id){
    	//div_text.style["width"] = "100px"
 
 //style
+
+      div_text.style["position"] = "relative";
+
    	if(type == "keyword"){
 		div_text.style["color"] = "#7f0055";
 		div_text.style["font-weight"] = "bold";
@@ -114,5 +117,19 @@ function create_div(parent_ele , type , str , div_id){
    	div_text.style["float"] = "left"
    	div_text.innerHTML = str;
 
-	parent_ele.appendChild(div_text);  
+	   parent_ele.appendChild(div_text);  
+
+      return div_text;
+}
+
+function code_fly(ele_id ,left , top){
+
+    var div=$("#"+ele_id);  
+    div.animate(
+      {
+         left:left,
+         top: top
+      },"slow");
+    //ele.animate({fontSize:'3em'},"slow");
+
 }
