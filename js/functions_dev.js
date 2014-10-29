@@ -166,12 +166,12 @@ function fly(div_list){
 			$ele.html('');
 			var timer = setInterval(function() {
 				var current = str.substr(progress, 1);
-				if (current == '<') {
+				if (current == '<' ) {
 					progress = str.indexOf('>', progress) + 1;
 				}
 				//space &nbsp
 				else if(current == '&'){
-					progress = str.indexOf('p', progress) + 1;
+					progress = str.indexOf(';', progress) + 1;
 				}
 				else {
 					progress++;
