@@ -9,7 +9,7 @@ var codeOffsetY;
 
 var div_list;
 
-var fly_start_time = 7000;
+//var fly_start_time = 7000;
 var new_code_fadeOut_time = 15*1000;
 
 $(function () {
@@ -44,13 +44,6 @@ $(function () {
     setInterval(function () {
         garden.render();
     }, Garden.options.growSpeed);
-
-    setTimeout(function () {
-			//func_delete_content(content);
-
-			//behind typewriter
-			//fly(div_list);
-			}, fly_start_time);
 
     setTimeout(function () {
 			var content = document.getElementById("content");
