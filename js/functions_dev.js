@@ -7,6 +7,11 @@ var offsetY;
 var codeOffsetX;
 var codeOffsetY;
 
+var div_list;
+
+var fly_start_time = 7000;
+var new_code_fadeOut_time = 15*1000;
+
 $(function () {
     // setup garden
 	$loveHeart = $("#loveHeart");
@@ -25,7 +30,7 @@ $(function () {
     garden = new Garden(gardenCtx, gardenCanvas);
 	
     //create new_code
-    var div_list = new Array();
+    div_list = new Array();
     func_create_new_code(content , div_list , true);
 	adjustCodePosition();
 	$("#new_code").typewriter();
@@ -42,8 +47,10 @@ $(function () {
 
     setTimeout(function () {
 			//func_delete_content(content);
-			fly(div_list);
-			}, 7000);
+
+			//behind typewriter
+			//fly(div_list);
+			}, fly_start_time);
 
     setTimeout(function () {
 			var content = document.getElementById("content");
@@ -57,7 +64,7 @@ $(function () {
 			adjustCodePosition();
 			});
 
-			}, 10000);
+			}, new_code_fadeOut_time);
 });
 
 $(window).resize(function() {
@@ -116,7 +123,8 @@ function fly(div_list){
    var cluster = 20/length;
    var div_code_id = 0;
 
-   var code_interval = 50;
+   var interval_x = 0; // x:1~10 speed:5*(100-x*x)+10 ;  x:10~length speed:10
+   var code_interval = 510;
    var code_angle = 10;
 
    var Code_animationTimer = setInterval(function () {
@@ -142,6 +150,17 @@ function fly(div_list){
          	div_code_id++;	
          }         
       }
+
+      //time
+      if(interval_x<=10){
+      	code_interval = 5*(100 - interval_x * interval_x)+10;	
+      	interval_x++;
+      }
+      else{
+      	code_interval=10;
+      }
+      
+
    }, code_interval);
 
 }
@@ -166,6 +185,10 @@ function fly(div_list){
 				$ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
 				if (progress >= str.length) {
 					clearInterval(timer);
+
+					//fly
+					fly(div_list);
+
 				}
 			}, 30);
 		});
