@@ -45,6 +45,7 @@ $(function () {
         garden.render();
     }, Garden.options.growSpeed);
 
+    /*
     setTimeout(function () {
 			var content = document.getElementById("content");
 			$("#new_code").fadeOut(1000 , function(){
@@ -58,7 +59,21 @@ $(function () {
 			});
 
 			}, new_code_fadeOut_time);
+	*/
 });
+
+function FadeOut(){
+			var content = document.getElementById("content");
+			$("#new_code").fadeOut(1000 , function(){
+
+			func_delete_code(content);
+			var tmp_list = new Array();
+			func_create_new_code(content , tmp_list , false);
+			//$("#new_code").fadeOut();
+			$("#new_code").fadeIn(5000);
+			adjustCodePosition();
+			});
+}
 
 $(window).resize(function() {
     var newWidth = $(window).width();
@@ -120,41 +135,45 @@ function fly(div_list){
    var code_interval = 510;
    var code_angle = 10;
 
-   var Code_animationTimer = setInterval(function () {
+   func = function () {
       
       var position = getCodeHeartPoint(code_angle);
       
       code_fly(div_code_id , position[0] , position[1]);
      
       if (code_angle >= 30) {
-         clearInterval(Code_animationTimer);
+         //clearInterval(Code_animationTimer);
 
-         //show Heart
 
-         setTimeout(function () {
+
+        setTimeout(function () {
+         	FadeOut();			
+			}, 2000);
+
+       	setTimeout(function () {
 			startHeartAnimation();
 			}, 3000);
 
-         
-         //showMessages();
       } else {
          code_angle += cluster;
          if(div_code_id<length-1){
          	div_code_id++;	
-         }         
-      }
+         }
 
-      //time
-      if(interval_x<=10){
-      	code_interval = 5*(100 - interval_x * interval_x)+10;	
-      	interval_x++;
+        //time
+      	if(interval_x<=10){
+      		code_interval = 5*(100 - interval_x * interval_x)+10;	
+      		interval_x++;
+      	}
+      	else{
+      		code_interval=10;
+      	}
+      	setTimeout(func , code_interval);
       }
-      else{
-      	code_interval=10;
-      }
-      
+   }
 
-   }, code_interval);
+   //start first time
+   setTimeout(func , code_interval);
 
 }
 
