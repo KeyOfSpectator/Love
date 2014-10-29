@@ -9,9 +9,6 @@ var codeOffsetY;
 
 var div_list;
 
-//var fly_start_time = 7000;
-var new_code_fadeOut_time = 15*1000;
-
 $(function () {
     // setup garden
 	$loveHeart = $("#loveHeart");
@@ -119,7 +116,7 @@ function fly(div_list){
    var cluster = 20/length;
    var div_code_id = 0;
 
-   var interval_x = 0; // x:1~10 speed:5*(100-x*x)+10 ;  x:10~length speed:10
+   var interval_x = 0; // x:1~20 speed:(500/400)*(400-x*x)+10 ;  x:20~length speed:10
    var code_interval = 510;
    var code_angle = 10;
 
@@ -130,7 +127,6 @@ function fly(div_list){
       code_fly(div_code_id , position[0] , position[1]);
      
       if (code_angle >= 30) {
-         //clearInterval(Code_animationTimer);
 
         setTimeout(function () {
          	FadeOut();			
