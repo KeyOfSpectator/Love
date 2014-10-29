@@ -33,327 +33,327 @@ function func_create_new_code(parent_ele , /*optional*/ div_list , display) {
       create_br(new_code);
 //2
       create_placeholder(new_code);  
-      var str = "Girl";
-      var type = "keyword";
+      str = "Girl";
+      type = "keyword";
       create_line(new_code, str, div_list, type);
-      var str = " u = ";
-      var type = "normal";
+      str = " u = ";
+      type = "normal";
       create_line(new_code, str, div_list, type);
-      var str = "new";
-      var type = "keyword";
+      str = "new";
+      type = "keyword";
       create_line(new_code, str, div_list, type);
-      var str = " lone_star(";
-      var type = "normal";
+      str = " lone_star(";
+      type = "normal";
       create_line(new_code, str, div_list, type);
-      var str = "\"Lotus\"";
-      var type = "string";
+      str = "\"Lotus\"";
+      type = "string";
       create_line(new_code, str, div_list, type);
-      var str = ");";
-      var type = "normal";
+      str = ");";
+      type = "normal";
       create_line(new_code, str, div_list, type);
       create_br(new_code);
 //3
       create_placeholder(new_code);  
-      var str = "Boy";
-      var type = "keyword";
+      str = "Boy";
+      type = "keyword";
       create_line(new_code, str, div_list, type);
-      var str = " i = ";
-      var type = "normal";
+      str = " i = ";
+      type = "normal";
       create_line(new_code, str, div_list, type);
-      var str = "new";
-      var type = "keyword";
+      str = "new";
+      type = "keyword";
       create_line(new_code, str, div_list, type);
-      var str = " lone_star(";
-      var type = "normal";
+      str = " lone_star(";
+      type = "normal";
       create_line(new_code, str, div_list, type);
-      var str = "\"KeyOfSpectator\"";
-      var type = "string";
+      str = "\"KeyOfSpectator\"";
+      type = "string";
       create_line(new_code, str, div_list, type);
-      var str = ");";
-      var type = "normal";
+      str = ");";
+      type = "normal";
       create_line(new_code, str, div_list, type);
       create_br(new_code);
 
 //4
-      var str = "// they got a glance at nepal ";
-      var type = "comments";
+      str = "// they got a glance at nepal ";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //5
-      var str = "// ......since then";
-      var type = "comments";
+      str = "// ......since then";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //6
       create_placeholder(new_code); 
-      var str = "i.heart_stack.push(u);";
-      var type = "normal";
+      str = "i.heart_stack.push(u);";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //7
       create_placeholder(new_code); 
-      var str = "i.miss(u);";
-      var type = "normal";
+      str = "i.miss(u);";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //8
-      var str = "/**";
-      var type = "comments";
+      str = "/**";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //9
       create_space(new_code);
-      var str = "* I dont want to lose \'The One\'";
-      var type = "comments";
+      str = "* I dont want to lose \'The One\'";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //10
       create_space(new_code);
-      var str = "* I dont want to let you alone ";
-      var type = "comments";
+      str = "* I dont want to let you alone ";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //11
       create_space(new_code);
-      var str = "* any more ...";
-      var type = "comments";
+      str = "* any more ...";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //12
       create_space(new_code);
-      var str = "* ......That night ";
-      var type = "comments";
+      str = "* ......That night ";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //13
       create_space(new_code);
-      var str = "* I told you I love you.";
-      var type = "comments";
+      str = "* I told you I love you.";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //14
       create_space(new_code);
-      var str = "*/";
-      var type = "comments";
+      str = "*/";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //15
       create_placeholder(new_code);
-      var str = "u.accepted();";
-      var type = "normal";
+      str = "u.accepted();";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //16
-      var str = "/* Eversince the moment: Oct 18, 2014, 23:50:08 */";
-      var type = "comments";
+      str = "/* Eversince the moment: Oct 18, 2014, 23:50:08 */";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //17
       create_placeholder(new_code);
-      var str = "global_world.happest = i;";
-      var type = "normal";
+      str = "global_world.happest = i;";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //18
       create_placeholder(new_code);
-      var str = "for";
-      var type = "keyword";
+      str = "for";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = "( you ; time ";
-      var type = "normal";
+      str = "( you ; time ";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
-      var str = "<=";
-      var type = "keyword";
+      str = "<=";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = " End_Of_The_World";
-      var type = "string";
+      str = " End_Of_The_World";
+      type = "string";
       create_line(new_code, str, div_list, type); 
-      var str = "  ; i.strength";
-      var type = "normal";
+      str = " ; i.strength";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
-      var str = "++";
-      var type = "keyword";
+      str = "++";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = " ){";
-      var type = "normal";
+      str = " ){";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);  
 
 //19
       create_placeholder(new_code);
-      var str = "/* I summon up my strongest courage never ever before */";
-      var type = "comments";
+      str = "/* I summon up my strongest courage never ever before */";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);  
 
 //20
       create_placeholder(new_code);
-      var str = "i.challenge( global_world );";
-      var type = "normal";
+      str = "i.challenge( global_world );";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
-      var str = " // for you";
-      var type = "comments";
+      str = " // for you";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code); 
 
 //21
       create_placeholder(new_code);
-      var str = "}";
-      var type = "normal";
+      str = "}";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);  
 
 //22
       create_placeholder(new_code);
-      var str = "try";
-      var type = "keyword";
+      str = "try";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = "{ ";
-      var type = "normal";
+      str = "{ ";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
-      var str = "if";
-      var type = "keyword";
+      str = "if";
+      type = "keyword";
       create_line(new_code, str, div_list, type);
-      var str = "( our_distance ";
-      var type = "normal";
+      str = "( our_distance ";
+      type = "normal";
       create_line(new_code, str, div_list, type);
-      var str = "==";
-      var type = "keyword";
+      str = "==";
+      type = "keyword";
       create_line(new_code, str, div_list, type);
-      var str = " VeryVeryFar ";
-      var type = "string";
+      str = " VeryVeryFar ";
+      type = "string";
       create_line(new_code, str, div_list, type);
-      var str = ")";
-      var type = "normal";
+      str = ")";
+      type = "normal";
       create_line(new_code, str, div_list, type);
       create_br(new_code); 
 
 //23
       create_placeholder(new_code);
-      var str = "}";
-      var type = "normal";
+      str = "}";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
-      var str = "catch";
-      var type = "keyword";
+      str = "catch";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = "(error){ ";
-      var type = "normal";
+      str = "(error){ ";
+      type = "normal";
       create_line(new_code, str, div_list, type);
-      var str = "Myheart";
-      var type = "string";
+      str = "Myheart";
+      type = "string";
       create_line(new_code, str, div_list, type);
-      var str = ".";
-      var type = "keyword";
+      str = ".";
+      type = "keyword";
       create_line(new_code, str, div_list, type);
-      var str = "distance(u) ";
-      var type = "normal";
+      str = "distance(u) ";
+      type = "normal";
       create_line(new_code, str, div_list, type);
-      var str = "= ";
-      var type = "keyword";
+      str = "= ";
+      type = "keyword";
       create_line(new_code, str, div_list, type);
-      var str = "0";
-      var type = "string";
+      str = "0";
+      type = "string";
       create_line(new_code, str, div_list, type);
-      var str = ";   }";
-      var type = "normal";
+      str = "; }";
+      type = "normal";
       create_line(new_code, str, div_list, type);
       create_br(new_code); 
 
 //24
-      var str = "/** you asked me ";
-      var type = "comments";
+      str = "/** you asked me ";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //25
       create_space(new_code);
-      var str = "*   to remember my words for a long long time ";
-      var type = "comments";
+      str = "*  to remember my words for a long long time ";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //26
-      create_placeholder(new_code);
-      var str = "I will keep that */";
-      var type = "comments";
+      create_space(new_code);
+      str = "*  I will keep that */";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //27
       create_placeholder(new_code);
-      var str = "while";
-      var type = "keyword";
+      str = "while";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = "(";
-      var type = "normal";
+      str = "(";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
-      var str = "true";
-      var type = "string";
+      str = "true";
+      type = "string";
       create_line(new_code, str, div_list, type); 
-      var str = "){";
-      var type = "normal";
+      str = "){";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //28
       create_placeholder(new_code);
       create_placeholder(new_code);
-      var str = "final ";
-      var type = "keyword";
+      str = "final ";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = "Myheart";
-      var type = "string";
+      str = "Myheart";
+      type = "string";
       create_line(new_code, str, div_list, type); 
-      var str = ".";
-      var type = "keyword";
+      str = ".";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = "Angel ";
-      var type = "string";
+      str = "Angel ";
+      type = "string";
       create_line(new_code, str, div_list, type);
-      var str = "= ";
-      var type = "keyword";
+      str = "= ";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = "u; }";
-      var type = "normal";
+      str = "u; }";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //29
-      var str = "// In my dream , and i m going to get it baby.";
-      var type = "comments";
+      str = "// In my dream , and i m going to get it baby.";
+      type = "comments";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //30
       create_placeholder(new_code);
-      var str = "i";
-      var type = "string";
+      str = "i";
+      type = "string";
       create_line(new_code, str, div_list, type); 
-      var str = ".";
-      var type = "keyword";
+      str = ".";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
-      var str = "liveHappilyWith(";
-      var type = "normal";
+      str = "liveHappilyWith(";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
-      var str = "u";
-      var type = "string";
+      str = "u";
+      type = "string";
       create_line(new_code, str, div_list, type); 
-      var str = ");";
-      var type = "normal";
+      str = ");";
+      type = "normal";
       create_line(new_code, str, div_list, type);
       create_br(new_code);
 }
@@ -362,7 +362,7 @@ function create_line(parent_ele, str_line, /*optional*/ div_list, type){
 
    	for (var i=0; i<str_line.length ; i++) {
 
-   		var str = str_line.substring(i , i+1);
+   		str = str_line.substring(i , i+1);
    		
    		//space
    		if(str == " "){
