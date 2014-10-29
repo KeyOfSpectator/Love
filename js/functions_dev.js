@@ -92,7 +92,7 @@ function startHeartAnimation() {
 		for (var i = 0; i < heart.length; i++) {
 			var p = heart[i];
 			var distance = Math.sqrt(Math.pow(p[0] - bloom[0], 2) + Math.pow(p[1] - bloom[1], 2));
-			if (distance < Garden.options.bloomRadius.max * 1.3) {
+			if (distance < Garden.options.bloomRadius.max * 1.2) {
 				draw = false;
 				break;
 			}

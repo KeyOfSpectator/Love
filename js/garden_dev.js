@@ -154,8 +154,8 @@
 	            max: 1
 	        },
 	        bloomRadius: {
-	            min: 8,
-	            max: 10
+	            min: 12,
+	            max: 16
 	        },
 	        density: 10,
 	        growSpeed: 1000 / 60,
