@@ -26,7 +26,7 @@ $(function () {
 	
     //create new_code
     var div_list = new Array();
-    func_create_new_code(content , div_list);
+    func_create_new_code(content , div_list , true);
 	adjustCodePosition();
 	$("#new_code").typewriter();
 
@@ -46,9 +46,18 @@ $(function () {
 			}, 7000);
 
     setTimeout(function () {
-				//move to functions_dev
-				
-			}, 1000);
+			var content = document.getElementById("content");
+			$("#new_code").fadeOut(1000 , function(){
+
+			func_delete_code(content);
+			var tmp_list = new Array();
+			func_create_new_code(content , tmp_list , false);
+			//$("#new_code").fadeOut();
+			$("#new_code").fadeIn(5000);
+			adjustCodePosition();
+			});
+
+			}, 10000);
 });
 
 $(window).resize(function() {
@@ -109,8 +118,6 @@ function fly(div_list){
 
    var code_interval = 50;
    var code_angle = 10;
-   //var code_heart = new Array();
-   //var code_maxRadius = 5; //*
 
    var Code_animationTimer = setInterval(function () {
       
@@ -122,7 +129,12 @@ function fly(div_list){
          clearInterval(Code_animationTimer);
 
          //show Heart
-         startHeartAnimation();
+
+         setTimeout(function () {
+			startHeartAnimation();
+			}, 3000);
+
+         
          //showMessages();
       } else {
          code_angle += cluster;

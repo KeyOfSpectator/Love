@@ -1,31 +1,21 @@
-function func_delete_content(parent_ele) {
-//kill ele 
-//param parent_ele
-/*
-	var child_list = code_ele.childNodes;
-	for (i=0; i<c.length; i++)
-  	{
-  		txt=txt + c[i].nodeName + "<br>";
- 	};
-
-	code_ele.removeChild( code_ele.childNodes[])
-*/
-	var list = parent_ele.childNodes;
-
-	var ele = list[1];
-
+function func_delete_code(parent_ele) {
+	//var list = parent_ele.childNodes;
+	var ele = document.getElementById("new_code");
 	parent_ele.removeChild(ele);
-
 }
 
 
-function func_create_new_code(parent_ele , div_list) {
+function func_create_new_code(parent_ele , /*optional*/ div_list , display) {
 	var new_code = document.createElement("div"); 
 	
-	new_code.id = "new_code";  
+	  new_code.id = "new_code";  
    	new_code.style["float"] = "left";
    	new_code.style["width"] = "440px";
    	new_code.style["height"] = "400px";
+
+      if(display == false){
+         new_code.style["display"] = "none";
+      }
 
    	new_code.style["font-family"] = "Consolas, Monaco, Bitstream Vera Sans Mono, Courier New, sans-serif";
 
@@ -39,30 +29,9 @@ function func_create_new_code(parent_ele , div_list) {
    	var type = "comments";
    	create_line(new_code, str, div_list, type);
 
-/*
-   	var str = "this is a test";
-   	var type = "comments";
-   	create_space(new_code)
-   	create_line(new_code, str, div_list, type);
-
-      var str = "line 3 test";
-      var type = "comments";
-      create_space(new_code)
-      create_line(new_code, str, div_list, type);
-
-      var str = "line 4 test";
-      var type = "comments";
-      create_space(new_code)
-      create_line(new_code, str, div_list, type);
-
-      var str = "line 5 test";
-      var type = "comments";
-      create_space(new_code)
-      create_line(new_code, str, div_list, type);
-*/
 }
 
-function create_line(parent_ele, str_line, div_list, type){
+function create_line(parent_ele, str_line, /*optional*/ div_list, type){
 
    	for (var i=0; i<str_line.length ; i++) {
 
