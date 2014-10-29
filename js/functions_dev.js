@@ -45,23 +45,9 @@ $(function () {
         garden.render();
     }, Garden.options.growSpeed);
 
-    /*
-    setTimeout(function () {
-			var content = document.getElementById("content");
-			$("#new_code").fadeOut(1000 , function(){
-
-			func_delete_code(content);
-			var tmp_list = new Array();
-			func_create_new_code(content , tmp_list , false);
-			//$("#new_code").fadeOut();
-			$("#new_code").fadeIn(5000);
-			adjustCodePosition();
-			});
-
-			}, new_code_fadeOut_time);
-	*/
 });
 
+//after fly
 function FadeOut(){
 			var content = document.getElementById("content");
 			$("#new_code").fadeOut(1000 , function(){
@@ -97,6 +83,7 @@ function getCodeHeartPoint(angle) {
 	return new Array(codeOffsetX + x, codeOffsetY + y);
 }
 
+//after fadeOut
 function startHeartAnimation() {
 	var interval = 50;
 	var angle = 10;
@@ -125,6 +112,7 @@ function startHeartAnimation() {
 	}, interval);
 }
 
+//after typewriter
 function fly(div_list){
 
    var length = div_list.length;
@@ -144,8 +132,6 @@ function fly(div_list){
       if (code_angle >= 30) {
          //clearInterval(Code_animationTimer);
 
-
-
         setTimeout(function () {
          	FadeOut();			
 			}, 2000);
@@ -161,8 +147,8 @@ function fly(div_list){
          }
 
         //time
-      	if(interval_x<=10){
-      		code_interval = 5*(100 - interval_x * interval_x)+10;	
+      	if(interval_x<=20){
+      		code_interval = (500/400)*(400 - interval_x * interval_x)+10;	
       		interval_x++;
       	}
       	else{
@@ -200,7 +186,6 @@ function fly(div_list){
 
 					//fly
 					fly(div_list);
-
 				}
 			}, 30);
 		});
