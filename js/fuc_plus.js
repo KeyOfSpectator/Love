@@ -19,7 +19,7 @@ function func_create_new_code(parent_ele , /*optional*/ div_list , display) {
 
    	new_code.style["font-family"] = "Consolas, Monaco, Bitstream Vera Sans Mono, Courier New, sans-serif";
 
-   	parent_ele.insertBefore(new_code);  
+   	parent_ele.insertBefore(new_code , parent_ele.childNodes[0]);  
 
    	//create new div and space_div
   
