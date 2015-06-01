@@ -27,334 +27,131 @@ function func_create_new_code(parent_ele , /*optional*/ div_list , display) {
    	//create_space(new_code);
       //create_placeholder(new_code);  
 //1
-   	var str = "// long long ago ";
-   	var type = "comments";
+   	var str = "Dear Lotus:";
+   	var type = "string";
    	create_line(new_code, str, div_list, type); 
       create_br(new_code);
 //2
-      create_placeholder(new_code);  
-      str = "Girl";
-      type = "keyword";
-      create_line(new_code, str, div_list, type);
-      str = " u = ";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
-      str = "new";
-      type = "keyword";
-      create_line(new_code, str, div_list, type);
-      str = " lone_star(";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
-      str = "\"Lotus\"";
-      type = "string";
-      create_line(new_code, str, div_list, type);
-      str = ");";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
+     
       create_br(new_code);
 //3
       create_placeholder(new_code);  
-      str = "Boy";
+      str = "Today is ";
+      type = "normal";
+      create_line(new_code, str, div_list, type);
+      str = "June 1st 2015.";
       type = "keyword";
       create_line(new_code, str, div_list, type);
-      str = " i = ";
+      str = "  Since we been together, ";
       type = "normal";
       create_line(new_code, str, div_list, type);
-      str = "new";
-      type = "keyword";
-      create_line(new_code, str, div_list, type);
-      str = " lone_star(";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
-      str = "\"KeyOfSpectator\"";
-      type = "string";
-      create_line(new_code, str, div_list, type);
-      str = ");";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
+      
       create_br(new_code);
 
 //4
-      str = "// they got a glance at nepal ";
-      type = "comments";
+      str = "it's ";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
+      str = "225";
+      type = "keyword";
+      create_line(new_code, str, div_list, type);
+      str = " days already.";
+      type = "normal";
+      create_line(new_code, str, div_list, type);
       create_br(new_code);
 
 //5
-      str = "// ......since then";
-      type = "comments";
+      create_placeholder(new_code);  
+      str = "This letter is a self-criticism on the one hand. ";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //6
-      create_placeholder(new_code); 
-      str = "i.heart_stack.push(u);";
+      str = "Sorry, I forget to celebrate the Children's Day for you.";
       type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //7
-      create_placeholder(new_code); 
-      str = "i.miss(u);";
+      str = "When you said you are upset today, my heart shocked.";
       type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //8
-      str = "/**";
-      type = "comments";
+      str = "I hate myself that moment, because I was so dull to get inside    your heart; worse, I can't suffer your upset.";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
+      create_br(new_code);
       create_br(new_code);
 
 //9
+      create_br(new_code);
+      create_placeholder(new_code); 
       create_space(new_code);
-      str = "* I dont want to lose \'The One\'";
-      type = "comments";
+      str = " I'm sorry. sincerely.";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //10
+      create_br(new_code);
       create_space(new_code);
-      str = "* I dont want to let you alone ";
-      type = "comments";
+      str = " On the other hand. I do want to stop the time and treasure";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //11
       create_space(new_code);
-      str = "* any more ...";
-      type = "comments";
+      str = "those days we spend together. I want you to be the little child";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //12
       create_space(new_code);
-      str = "* ......That night ";
-      type = "comments";
+      str = "just belong to me. Maybe I m so silly, so dull to a girl. I want";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //13
       create_space(new_code);
-      str = "* I told you I love you.";
-      type = "comments";
+      str = "to appreciate your love, your gentle, and your kind-heart.";
+      type = "normal";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //14
+      create_br(new_code);
       create_space(new_code);
-      str = "*/";
-      type = "comments";
+      str = "I LOVE YOU.";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //15
-      create_placeholder(new_code);
-      str = "u.accepted();";
-      type = "normal";
+      create_space(new_code);
+      str = "Unshakable.";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //16
-      str = "/* Eversince the moment: Oct 18, 2014, 23:50:08 */";
-      type = "comments";
+      create_space(new_code);
+      str = "I will be with you, forever.";
+      type = "keyword";
       create_line(new_code, str, div_list, type); 
       create_br(new_code);
 
 //17
-      create_placeholder(new_code);
-      str = "global_world.happest = i;";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
       create_br(new_code);
-
-//18
-      create_placeholder(new_code);
-      str = "for";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = "( you ; time ";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      str = "<=";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = " End_Of_The_World";
-      type = "string";
-      create_line(new_code, str, div_list, type); 
-      str = " ; i.strength";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      str = "++";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = " ){";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);  
-
-//19
-      create_placeholder(new_code);
-      str = "/* I summon up my strongest courage never ever before */";
-      type = "comments";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);  
-
-//20
-      create_placeholder(new_code);
-      str = "i.challenge( global_world );";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      str = " // for you";
-      type = "comments";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code); 
-
-//21
-      create_placeholder(new_code);
-      str = "}";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);  
-
-//22
-      create_placeholder(new_code);
-      str = "try";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = "{ ";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      str = "if";
-      type = "keyword";
-      create_line(new_code, str, div_list, type);
-      str = "( our_distance ";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
-      str = "==";
-      type = "keyword";
-      create_line(new_code, str, div_list, type);
-      str = " VeryVeryFar ";
-      type = "string";
-      create_line(new_code, str, div_list, type);
-      str = ")";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
-      create_br(new_code); 
-
-//23
-      create_placeholder(new_code);
-      str = "}";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      str = "catch";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = "(error){ ";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
-      str = "Myheart";
-      type = "string";
-      create_line(new_code, str, div_list, type);
-      str = ".";
-      type = "keyword";
-      create_line(new_code, str, div_list, type);
-      str = "distance(u) ";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
-      str = "= ";
-      type = "keyword";
-      create_line(new_code, str, div_list, type);
-      str = "0";
-      type = "string";
-      create_line(new_code, str, div_list, type);
-      str = "; }";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
-      create_br(new_code); 
-
-//24
-      str = "/** you asked me ";
-      type = "comments";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);
-
-//25
       create_space(new_code);
-      str = "*  to remember my words for a long long time ";
-      type = "comments";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);
-
-//26
-      create_space(new_code);
-      str = "*  I will keep that */";
-      type = "comments";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);
-
-//27
-      create_placeholder(new_code);
-      str = "while";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = "(";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      str = "true";
+      str = "                          KeyOfSpectator 2015-6-1";
       type = "string";
       create_line(new_code, str, div_list, type); 
-      str = "){";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);
-
-//28
-      create_placeholder(new_code);
-      create_placeholder(new_code);
-      str = "final ";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = "Myheart";
-      type = "string";
-      create_line(new_code, str, div_list, type); 
-      str = ".";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = "Angel ";
-      type = "string";
-      create_line(new_code, str, div_list, type);
-      str = "= ";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = "u; }";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);
-
-//29
-      str = "// In my dream , and i m going to get it baby.";
-      type = "comments";
-      create_line(new_code, str, div_list, type); 
-      create_br(new_code);
-
-//30
-      create_placeholder(new_code);
-      str = "i";
-      type = "string";
-      create_line(new_code, str, div_list, type); 
-      str = ".";
-      type = "keyword";
-      create_line(new_code, str, div_list, type); 
-      str = "liveHappilyWith(";
-      type = "normal";
-      create_line(new_code, str, div_list, type); 
-      str = "u";
-      type = "string";
-      create_line(new_code, str, div_list, type); 
-      str = ");";
-      type = "normal";
-      create_line(new_code, str, div_list, type);
       create_br(new_code);
 }
 
